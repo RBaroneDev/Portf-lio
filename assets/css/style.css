@@ -95,11 +95,45 @@ header a {
     transition: .2s;
 }
 
-header a:hover {
+header nav.menu-desktop a:hover {
     color: aliceblue;
     transform: scale(1.05);
 }
 
+/*ESTILO MENU MOBILE*/
+.menu-mobile {
+    background-color: rgba(0, 0, 0, 0.753);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+}
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #ac1b1b;
+}
+
+.menu-mobile .btn-fechar i {
+    color: #ac1b1b;
+    font-size: 30px;
+}
+.menu-mobile .btn-fechar {
+    padding: 20px 8%;
+}
 
 /* Navegação Estilo  */
 
@@ -107,7 +141,7 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
     display: inline-block;
     font-size: 25px;
     padding: 0 40px;
